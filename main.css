@@ -1,0 +1,51 @@
+body{
+    background: #23272A;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.choose_your_fighter{
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #232721, #fff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 2.5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, .01);
+
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: -500%;
+    }
+    100%
+    {
+        background-position: 500%;
+    }
+}
+
+.column {
+    float: left;
+    width: 27%;
+    margin: 40px;
+    transition: 0.4s;
+  }
+
+.column:hover{
+    transform:scale(1.1);
+    z-index: 1;
+}
+  
